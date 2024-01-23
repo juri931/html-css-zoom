@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -22,11 +23,54 @@ header button{
 
 main{
   background-color: black;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 65px);
   overflow: auto;
 }
 
 footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
   background-color: rgb(32, 32, 32);
-  height: 100px;
+  height: 65px;
+  color: white;
+}
+
+footer section{
+  display: flex;
+  margin: 0 10px;
+}
+
+.bottom-text{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+
+.arrow{
+  font-size: 30px;
+  line-height: 15px;
+}
+
+footer .icon{
+  text-align: center;
+  margin: 0 5px;
+}
+
+.icon svg{
+  height: 26px;
+  width: 26px;
+}
+
+.right{
+  color: red;
+  line-height: 65px;
+  text-align: center;
+  height: 100%;
+  padding: 0 10px;
+  margin-right: 0;
+  background-color: rgb(74, 74, 74);
 }
