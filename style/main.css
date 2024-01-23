@@ -5,11 +5,14 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Header Start */
 header{
   height: auto;
   position: fixed;
   right: 5px;
   top: 5px;
+  z-index: 999;
 }
 
 header button{
@@ -20,13 +23,41 @@ header button{
   cursor: pointer;
   text-align: center;
 }
+/* Header End */
 
+
+/* Main Start */
 main{
   background-color: black;
   height: calc(100vh - 65px);
-  overflow: auto;
 }
 
+.main {
+  /* position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 200px; */
+  position: absolute;
+  flex-flow: row;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.partecipant {
+
+  margin: 1px;
+}
+
+.partecipant img {
+  width: 200px;
+}
+/* Main End */
+
+
+/* Footer start */
 footer{
   position: fixed;
   bottom: 0;
@@ -37,6 +68,7 @@ footer{
   background-color: rgb(32, 32, 32);
   height: 65px;
   color: white;
+  z-index: 999;
 }
 
 footer section{
@@ -74,3 +106,4 @@ footer .icon{
   margin-right: 0;
   background-color: rgb(74, 74, 74);
 }
+/* Footer End */
