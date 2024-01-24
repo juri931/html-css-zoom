@@ -5,7 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 /* Header Start */
 header{
   height: auto;
@@ -30,6 +29,7 @@ header button{
 main{
   background-color: black;
   height: calc(100vh - 65px);
+  overflow: auto;
 }
 
 .main {
